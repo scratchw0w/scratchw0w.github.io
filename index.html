@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Scratchyy</title>
+		<title>Scratchy</title>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 
@@ -20,14 +20,53 @@
 			</div>
 		</header>
 
+		<div id = "top">
+			<h1>Hey there!</h1>
+			<h3>Scroll down 🤗</h3>
+		</div>
+
+		<div id = "main">
+			<div class="img">
+				<img src="resourses/forportf.jpg" alt=""><br>
+				<span id="und">Yep yep, it's me :D</span>
+			</div>
+			<div class="text">
+				<h2>Who am I?</h2>
+				<span>My name is Max</span><br>
+				<span>I'm happy to see you on my website!</span><br>
+				<span>Currently, I'm a student of Karazin University.📚</span><br>
+				<span>And at the same time, I love coding in Java ☕ :)</span>
+			</div>
+			<div class="intro">
+				<h2>My skills:</h2>
+				<span><br>- Java Core
+				<br>- Spring
+				<br>- Hibernate
+				<br>- HTML and CSS </span>
+			</div>
+		</div>
+
+		<div id = "overview">
+			<h3><span>
+			<h1>Contacts:</h1>
+				email: <a href="mailto:rikle_ng@ukr.net?subject=Your question..">rikle_ng@ukr.net</a> | skype: | GitHub: <a href="https://github.com/scratchyCoder">scratchyCoder</a>
+		</span></h3>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 		<script>
 			function slowScroll(id){
 				$('body').animate({
-					scrollTop: $(id).offset().top;
-				}, 500)
-			}
+					scrollTop: $(id).offset().top
+				}, 500);}
+		$(document).on("scroll", function () {
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		});
+
 		</script>
 
 	</body>
