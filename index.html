@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Scratchyy</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<header>
+			<div id="logo" onclick="slowScroll('#top')">
+				<span>Scratchy</span>
+			</div>
+			<div id="about">
+				<a href="#" title="Who Am I?" onclick="slowScroll('#main')">Who Am I?</a>
+				<a href="#" title="Skills" onclick="slowScroll('#overview')">Skills</a>
+				<a href="#" title="Contacts" onclick="slowScroll('#contacts')">Contacts</a>
+			</div>
+		</header>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script>
+			function slowScroll(id){
+				$('body').animate({
+					scrollTop: $(id).offset().top;
+				}, 500)
+			}
+		</script>
+
+	</body>
+
+</html>
