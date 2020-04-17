@@ -6,17 +6,18 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Scratchy</title>
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="icon" href="resourses/lowercase_letter_s_red-512.webp" type="images/x-icon">
 	</head>
 
 	<body>
 		<header>
-			<div id="logo" onclick="slowScroll(#top)">
+			<div id="logo" onclick="slowScroll('#top')">
 				<span>Scratchy</span>
 			</div>
 			<div id="about">
 				<a href="#main" title="Who Am I?" onclick="slowScroll('#main')">Who Am I?</a>
 				<a href="#intro" title="Skills" onclick="slowScroll('#overview')">Skills</a>
-				<a href="#overview" title="Contacts" onclick="slowScroll('#contacts')">Contacts</a>
+				<a href="#contacts" title="Contacts" onclick="slowScroll('#contacts')">Contacts</a>
 			</div>
 		</header>
 
@@ -46,7 +47,7 @@
 			</div>
 		</div>
 
-		<div id = "overview">
+		<div id = "contacts">
 			<h3><span>
 			<h1>Contacts:</h1>
 				email: <a href="mailto:rikle_ng@ukr.net?subject=Your question..">rikle_ng@ukr.net</a> | skype: | GitHub: <a href="https://github.com/scratchyCoder">scratchyCoder</a>
@@ -57,10 +58,11 @@
 
 		<script>
 			function slowScroll(id){
-				$('body').animate({
+				$('html', 'body').animate({
 					scrollTop: $(id).offset().top
-				}, 500);}
-		$(document).on("scroll", function () {
+				}, 500);
+			}
+			$(document).on("scroll", function () {
 			if($(window).scrollTop() === 0)
 				$("header").removeClass("fixed");
 			else
