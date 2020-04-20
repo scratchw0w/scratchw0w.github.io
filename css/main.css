@@ -133,11 +133,12 @@ header.fixed #logo {
 #top h1 {
   padding-top: 10%;
   padding-left: 34%;
+  color: #FFDEAD;
   font-size: 2em;
   font-family: 'Suez one', serif;
 }
 #top h3 {
-  padding-left: 32%;
+  padding-left: 30%;
   font-family: 'Suez one', serif;
 }
 
