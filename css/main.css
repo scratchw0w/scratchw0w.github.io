@@ -81,6 +81,15 @@ header #logo span {
 
 #about > a {color: #CD5C5C}
 
+#cv-link {
+  color: #000033;
+  text-decoration: none;
+}
+#cv-link:hover {
+  color: #CD5C5C;
+  text-decoration: underline;
+}
+
 
 #about > a:hover {color: #FFDEAD; text-decoration: underline;}
 
